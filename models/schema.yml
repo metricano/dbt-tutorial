@@ -45,3 +45,11 @@ sources:
             description: Primary key
           - name: first_order_date
             description: NULL when a customer has not yet placed an order.
+             tables:
+  - name: union_customers_raw_source
+        description: v2 One record per customer
+        columns:
+          - name: customer_id
+            description: v2 Primary key
+          - name: first_order_date
+            description: v2 NULL when a customer has not yet placed an order.
